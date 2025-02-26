@@ -1,8 +1,8 @@
 # hi! this is just unblocked stuff for school because im bored. expect crazy stuff because i dig through a lot of stuff lol
 
-[cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/)
-[retro emulator](https://schoolgamethingy.github.io/sgt-EmulatorJS/)
-[super mario 64](https://schoolgamethingy.github.io/sgt-sm64/)
+[cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
+[retro emulator](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
+[super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
 
 ### stuff i use, like tools or smth
 
