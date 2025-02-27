@@ -1,4 +1,4 @@
-# hi! this is just unblocked stuff for school because im bored. expect crazy stuff because i dig through a lot of stuff lol <br>
+# hi! this is just unblocked stuff for school because im bored. expect crazy stuff because i dig through a lot of stuff <br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
