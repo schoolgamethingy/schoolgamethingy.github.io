@@ -8,6 +8,10 @@
 ## emulatorJS games <br>
 [pitfall - atari 2600](https://schoolgamethingy.github.io/sgt-pitfall/)<br>
 [sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
+[street fighter - nes](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
+[wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
+<br>
+<br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 ## credits can be found in the sites
