@@ -4,6 +4,7 @@
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
 [2048](https://schoolgamethingy.github.io/sgt-2048/) <br> 
 [wordle](https://schoolgamethingy.github.io/sgt-wordle/) <br>
+[tetris](https://schoolgamethingy.github.io/sgt-tetris/) <br>
 
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
