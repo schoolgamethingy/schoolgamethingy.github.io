@@ -9,6 +9,7 @@
 <br>
 ## emulatorJS games <br>
 [pitfall - atari 2600](https://schoolgamethingy.github.io/sgt-pitfall/)<br>
+[sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
 [sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
 [street fighter - nes](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
 [wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
