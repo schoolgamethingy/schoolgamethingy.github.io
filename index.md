@@ -12,9 +12,10 @@
 [super mario world - SNES](https://schoolgamethingy.github.io/sgt-smw/)<br>
 [sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
 [sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
+[sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic3/)<br>
 [street fighter - nes](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
 [wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
-<br>
+[spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 <br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
