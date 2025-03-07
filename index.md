@@ -6,6 +6,7 @@
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
 [2048](https://schoolgamethingy.github.io/sgt-2048/) <br> 
 [tetris](https://schoolgamethingy.github.io/sgt-tetris/) <br>
+[minecraft 1.11](https://schoolgamethingy.github.io/sgt-minecraft/)<br>
 <br>
 ## emulatorJS games <br>
 [pitfall - atari 2600](https://schoolgamethingy.github.io/sgt-pitfall/)<br>
