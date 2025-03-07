@@ -17,7 +17,6 @@
 [spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [galaga - atari 7800](https://schoolgamethingy.github.io/sgt-galaga/)<br>
 [donkey kong - NES](https://schoolgamethingy.github.io/sgt-donkeykong/)<br>
-[3d tetris - virtual boy](https://schoolgamethingy.github.io/sgt-3dtetris/)<br>
 <br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
