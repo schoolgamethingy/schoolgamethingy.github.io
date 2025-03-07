@@ -21,7 +21,8 @@
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 <br>
-##suggest games <br>
+# suggest games <br>
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
 <br>
-## credits can be found in the sites
+<br>
+credits can be found in the github repos
