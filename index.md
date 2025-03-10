@@ -18,6 +18,7 @@
 [spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [galaga - atari 7800](https://schoolgamethingy.github.io/sgt-galaga/)<br>
 [donkey kong - NES](https://schoolgamethingy.github.io/sgt-donkeykong/)<br>
+[doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 <br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
