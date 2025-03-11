@@ -29,5 +29,5 @@ the reason i have so many retro games is because its the only thing i can find, 
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
 <br>
 <br>
-"(NEW!)" means that game has been added since the last 48 hours <br>
+"(NEW!)" means that game has been added in the last day <br>
 credits can be found in the github repos
