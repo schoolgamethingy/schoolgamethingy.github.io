@@ -21,7 +21,9 @@
 [doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [pac man - NES](https://schoolgamethingy.github.io/sgt-pacman/) (NEW!)<br>
 [space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader) (NEW!)<br>
+[pac mania - NES](https://schoolgamethingy.github.io/sgt-mania) (NEW!)<br>
 <br>
+the reason i have so many retro games is because its the only thing i can find, and that my friends suggest (im not complaining tho, its fun)
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 <br>
@@ -29,4 +31,5 @@
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
 <br>
 <br>
+"(NEW!)" means that game has been added since the last 48 hours
 credits can be found in the github repos
