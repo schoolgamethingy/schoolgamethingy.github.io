@@ -1,4 +1,5 @@
-# SGT - GAMES
+# SGT - GAMES<br>
+### quick note, PLEASE start suggesting stuff. Im bored half the time and want to add games to this. <br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
