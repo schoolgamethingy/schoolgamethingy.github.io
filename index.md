@@ -19,8 +19,8 @@
 [galaga - atari 7800](https://schoolgamethingy.github.io/sgt-galaga/)<br>
 [donkey kong - NES](https://schoolgamethingy.github.io/sgt-donkeykong/)<br>
 [doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
-[pac man - NES](https://schoolgamethingy.github.io/sgt-pacman/)(NEW!)<br>
-[space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader)(NEW!)<br>
+[pac man - NES](https://schoolgamethingy.github.io/sgt-pacman/) (NEW!)<br>
+[space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader) (NEW!)<br>
 <br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
