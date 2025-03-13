@@ -1,6 +1,6 @@
 # SGT - GAMES<br>
-# start suggesting more, i need more ideas lol <br>
-### and if you want you should share the site, the site isnt that popular rn.<br>
+start suggesting more, i need more ideas lol <br>
+# share the site. please.<br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
