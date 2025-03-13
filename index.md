@@ -24,8 +24,8 @@
 [pac mania - NES](https://schoolgamethingy.github.io/sgt-mania)<br>
 [mario 64 DS - DS](https://schoolgamethingy.github.io/sgt-mario64ds) <br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
-[sonic 3 & knuckles - game gear](schoolgamethingy.github.io/sgt-sonic&knuckles) (NEW!)<br>
-[sonic blue sphere - game gear](schoolgamethingy.github.io/sgt-bluesphere) (NEW!)<br>
+[sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) (NEW!)<br>
+[sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) (NEW!)<br>
 the reason i have so many retro games is because its the only thing i can find, and that my friends suggest (im not complaining tho, its fun)
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
