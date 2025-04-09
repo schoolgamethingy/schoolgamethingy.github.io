@@ -26,6 +26,7 @@ start suggesting more, i need more ideas lol <br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
 [sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) <br>
 [sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) <br>
+[digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) (NEW!!)<br>
 the reason i have so many retro games is because its the only thing i can find, and that my friends suggest (im not complaining tho, its fun)
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
@@ -34,5 +35,5 @@ the reason i have so many retro games is because its the only thing i can find, 
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
 <br>
 <br>
-"(NEW!)" means that game has been added in the last day <br>
+"(NEW!!)" means that game has been added in the last day <br>
 credits can be found in the github repos
