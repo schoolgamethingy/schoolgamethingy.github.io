@@ -1,6 +1,5 @@
 # SGT - GAMES<br>
-start suggesting more, i need more ideas lol <br>
-# share the site. please.<br>
+scroll to the bottom to suggest things (please i need more games) <br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
@@ -27,7 +26,7 @@ start suggesting more, i need more ideas lol <br>
 [sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) <br>
 [sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) <br>
 [digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) (NEW!!)<br>
-the reason i have so many retro games is because its the only thing i can find, and that my friends suggest (im not complaining tho, its fun)
+<br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 <br>
