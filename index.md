@@ -1,5 +1,5 @@
 # SGT - GAMES<br>
-scroll to the bottom to suggest things (please i need more games) <br>
+# MESSAGE -- can yall suggest games? like not just retro games, ANYTHING. <br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
@@ -9,23 +9,24 @@ scroll to the bottom to suggest things (please i need more games) <br>
 <br>
 ## emulatorJS games <br>
 [pitfall - atari 2600](https://schoolgamethingy.github.io/sgt-pitfall/)<br>
-[super mario world - SNES](https://schoolgamethingy.github.io/sgt-smw/)<br>
-[sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
-[sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
-[street fighter - nes](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
-[wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
-[spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [galaga - atari 7800](https://schoolgamethingy.github.io/sgt-galaga/)<br>
 [donkey kong - NES](https://schoolgamethingy.github.io/sgt-donkeykong/)<br>
-[doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [pac man - NES](https://schoolgamethingy.github.io/sgt-pacman/)<br>
-[space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader)<br>
 [pac mania - NES](https://schoolgamethingy.github.io/sgt-mania)<br>
-[mario 64 DS - DS](https://schoolgamethingy.github.io/sgt-mario64ds) <br>
+[street fighter - NES](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
+[super mario world - SNES](https://schoolgamethingy.github.io/sgt-smw/)<br>
+[space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader)<br>
+[sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
+[sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
+[wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
+[spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
+[doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
+[mario 64 DS - DS](https://schoolgamethingy.github.io/sgt-mario64ds) <br>
 [sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) <br>
 [sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) <br>
-[digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) (NEW!!)<br>
+[digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) <br>
+[mario 3 - NES](https://schoolgamethingy.github.io/sgt-mario3/) (NEW!!) <br>
 <br>
 ### tools <br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
