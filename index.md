@@ -14,7 +14,7 @@
 [pac man - NES](https://schoolgamethingy.github.io/sgt-pacman/)<br>
 [pac mania - NES](https://schoolgamethingy.github.io/sgt-mania)<br>
 [street fighter - NES](https://schoolgamethingy.github.io/sgt-stfighter/)<br>
-[mario 3 - NES](https://schoolgamethingy.github.io/sgt-mario3/) ㅤㅤㅤㅤㅤㅤㅤ(NEW!!) <br>
+[mario 3 - NES](https://schoolgamethingy.github.io/sgt-mario3/) ----- (NEW!!) <br>
 [super mario world - SNES](https://schoolgamethingy.github.io/sgt-smw/)<br>
 [space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader)<br>
 [sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
