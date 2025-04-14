@@ -1,0 +1,15 @@
+<center>
+<button onclick="openGame()" > Play in Fullscreen </button>
+<script>
+function openGame() {
+	var win = window.open ()
+	var url = "https://famobi.cdn.start.gg/9npxcz4n8jw7/v16/index.html?msstart_sdk_init=eyJwYXJlbnRPcmlnaW4iOiJodHRwczovL3d3dy5tc24uY29tIiwiY2xpZW50SWQiOiIzQTg1MDYzOTJCMDI2RTIzMDU5ODEzRjAyQThFNkZBNyIsImxvY2FsZSI6ImVuLXVzIiwiZW50cnlQb2ludElkIjoid2lucHNlYXJjaGJveGV4cGN0YTIifQ"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+</script>
+</center>
