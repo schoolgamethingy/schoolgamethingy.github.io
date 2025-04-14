@@ -25,6 +25,7 @@
 [spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
+[the new tetris - n64](https://schoolgamethingy.github.io/SGT-thenewtetris)<br>
 [mario 64 DS - DS](https://schoolgamethingy.github.io/sgt-mario64ds) <br>
 [digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) <br>
 <br>
