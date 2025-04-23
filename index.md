@@ -5,7 +5,7 @@
 [2048](https://schoolgamethingy.github.io/sgt-2048/) <br> 
 [tetris](https://schoolgamethingy.github.io/sgt-tetris/) <br>
 [minecraft 1.11](https://schoolgamethingy.github.io/sgt-minecraft/)<br>
-[Crazy Cattle 3D](https://crazycattle3d.github.io/) (not mine) <br>
+[Crazy Cattle 3D](http://schoolgamethingy.github.io/sgt-cattle3d/) (fixed!) <br>
 <br>
 ## emulatorJS games <br>
 [pitfall - atari 2600](https://schoolgamethingy.github.io/sgt-pitfall/)<br>
