@@ -35,7 +35,7 @@
 ### tools N' misc<br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 <br>
-1st-
+1st- 8:05-8:47  2nd- 8:50-9:37  3rd- 9:40-10:27  4th- 10:30-11:17  lunch 11:20-11:50  5th- 12:00-12:37  6th- 12:40-1:47  7th- 1:50-2:10  (not accurate, will fix latr)
 <br>
 # feedback/bug report/suggestions <br>
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
