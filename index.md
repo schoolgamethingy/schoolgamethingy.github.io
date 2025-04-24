@@ -23,16 +23,19 @@
 [sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
 [sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) <br>
 [sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) <br>
-[wario land II - gameboy color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
-[spongebob battle for bikini bottom - gameboy advance](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
+[wario land II - GB color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
+[mario vs donkey kong - GBA](https://schoolgamethingy.github.io/sgt-marovsdonky/) <br>
+[spongebob battle for bikini bottom - GBA](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
 [the new tetris - n64](https://schoolgamethingy.github.io/SGT-thenewtetris)<br>
 [mario 64 DS - DS](https://schoolgamethingy.github.io/sgt-mario64ds) <br>
 [digdug - arcade](https://schoolgamethingy.github.io/sgt-digdug/) <br>
 <br>
-### tools <br>
+### tools N' misc<br>
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
+<br>
+1st-
 <br>
 # feedback/bug report/suggestions <br>
 [https://forms.gle/hHUc2p2eVaPSAuRQA](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
