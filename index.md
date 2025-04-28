@@ -19,6 +19,7 @@
 [mario 3 - NES](https://schoolgamethingy.github.io/sgt-mario3/) <br>
 [super mario world - SNES](https://schoolgamethingy.github.io/sgt-smw/)<br>
 [space invaders - SNES](https://schoolgamethingy.github.io/sgt-invader)<br>
+[kirby super stars - SNES](https://schoolgamethingy.github.io/sgt-kirbosuper/) (NEW!!!) <br>
 [sonic 1 - game gear](https://schoolgamethingy.github.io/sgt-sonic1/)<br>
 [sonic 2 - game gear](https://schoolgamethingy.github.io/sgt-sonic2/)<br>
 [sonic 3 & knuckles - game gear](https://schoolgamethingy.github.io/sgt-sonic&knuckles) <br>
@@ -43,7 +44,7 @@
 <br>
 "(NEW!!)" means that game has been added in the last day <br>
 credits can be found in the github repos <br>
-v116 <br>
+v117 <br>
 
 <html> <link rel="icon" href="favicon.png" type="image/x-icon">
  </html>
