@@ -1,5 +1,3 @@
-<link rel="icon" href="favicon.png" type="image/x-icon">
-
 # SGT - GAMES<br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
@@ -45,3 +43,7 @@
 <br>
 "(NEW!!)" means that game has been added in the last day <br>
 credits can be found in the github repos
+v127
+
+
+<link rel="icon" href="favicon.png" type="image/x-icon">
