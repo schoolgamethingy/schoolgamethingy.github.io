@@ -25,7 +25,7 @@
 [sonic blue sphere - game gear](https://schoolgamethingy.github.io/sgt-bluesphere) <br>
 [wario land II - GB color](https://schoolgamethingy.github.io/sgt-warioland/)<br>
 [mario vs donkey kong - GBA](https://schoolgamethingy.github.io/sgt-marovsdonky/) <br>
-[mario and luigi: superstar saga](https://schoolgamethingy.github.io/sgt-maroNlugisuperstar/) (NEW!!)<br>
+[mario and luigi: superstar saga](https://schoolgamethingy.github.io/sgt-maroNlugisuperstar/) <br>
 [spongebob battle for bikini bottom - GBA](https://schoolgamethingy.github.io/sgt-spongebob/)<br>
 [doom 64 - n64](https://schoolgamethingy.github.io/sgt-doom64/)<br>
 [mario kart 64 - n64](https://schoolgamethingy.github.io/sgt-mariokart64/)<br>
