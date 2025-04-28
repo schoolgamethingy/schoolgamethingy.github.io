@@ -37,7 +37,7 @@
 [iso thingy](https://schoolgamethingy.github.io/sgt-RomPatcher.js/) <br>
 <br>
 <br>
-# [feedback/bug report/suggestions](https://forms.gle/hHUc2p2eVaPSAuRQA)<<br>
+# [feedback/bug report/suggestions](https://forms.gle/hHUc2p2eVaPSAuRQA)<br>
 <br>
 <br>
 <br>
