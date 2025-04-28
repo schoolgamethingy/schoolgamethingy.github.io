@@ -1,3 +1,5 @@
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 # SGT - GAMES<br>
 [cookie clicker](https://schoolgamethingy.github.io/sgt-cookieclicker/) <br>
 [emulatorJS](https://schoolgamethingy.github.io/sgt-EmulatorJS/) <br>
