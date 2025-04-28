@@ -42,8 +42,8 @@
 <br>
 <br>
 "(NEW!!)" means that game has been added in the last day <br>
-credits can be found in the github repos
-v113
+credits can be found in the github repos <br>
+v113 <br>
 
-
-<link rel="icon" href="favicon.png" type="image/x-icon">
+<html> <link rel="icon" href="favicon.png" type="image/x-icon">
+ </html>
