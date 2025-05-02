@@ -4,7 +4,7 @@
 [super mario 64](https://schoolgamethingy.github.io/sgt-sm64/) <br>
 [2048](https://schoolgamethingy.github.io/sgt-2048/) <br> 
 [tetris](https://schoolgamethingy.github.io/sgt-tetris/) <br>
-[minecraft 1.11](https://schoolgamethingy.github.io/sgt-minecraftv2/) (updated)<br>
+[minecraft 1.11](https://schoolgamethingy.github.io/sgt-minecraft/) (fixed, my badd)<br>
 [Crazy Cattle 3D](http://schoolgamethingy.github.io/sgt-cattle3d/) <br>
 <br>
 ## emulatorJS games <br>
@@ -45,8 +45,8 @@
 "(NEW!!)" means that game has been added in the last day <br>
 credits can be found in the github repos <br>
 <br>
-v123 changelog: <br>
-made minecraft multiplayer work (i hope)<br>
+v124 changelog: <br>
+fixed minecraft<br>
 thats it
 <br>
 <head>
