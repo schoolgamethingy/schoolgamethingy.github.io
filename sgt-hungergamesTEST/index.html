@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PyScript Example</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.01.14/pyscript.css" />
+    <script src="https://pyscript.net/releases/2024.01.14/pyscript.js"></script>
+    <script type="text/python">
+        print("Hello from PyScript!")
+    </script>
+</head>
+<body>
+    <p> import random
+
+class Item:
+    def __init__(self, name, effects):
+        self.name = name
+        self.effects = effects
+
+    def apply_effects(self, player):
+        for stat, value in self.effects.items():
+            if stat in player.stats:
+                player.stats[stat] += value
+                print(f"{player.name}'s {stat} changed by {value}. Current {stat}: {player.stats[stat]}")
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.stats = {'HP': 5, 'STR': 5, 'DEF': 5, 'STA': 5, 'INT': 5, 'CHA': 5}
+        self.inventory = []
+        self.alliances = set()
+
+    def form_alliance(self, other_player):
+        self.alliances.add(other_player.name)
+        other_player.alliances.add(self.name)
+
+    def break_alliance(self, other_player):
+        self.alliances.discard(other_player.name)
+        other_player.alliances.discard(self.name)
+
+    def add_item(self, item):
+        self.inventory.append(item)
+
+    def use_item(self, item_name):
+        for item in self.inventory:
+            if item.name == item_name:
+                item.apply_effects(self)
+                self.inventory.remove(item)
+                print(f"{item_name} used. Effects applied.")
+                return
+        print(f"No item named {item_name} found in inventory.")
+
+    def list_inventory(self):
+        if not self.inventory:
+            print("Inventory is empty.")
+        else:
+            print("Inventory items:")
+            for item in self.inventory:
+                print(f"- {item.name}")
+
+def randomize_stats(player, total_points=20):
+    stats_keys = list(player.stats.keys())
+    while total_points > 0:
+        available_stats = [stat for stat in stats_keys if player.stats[stat] < 25]
+        if not available_stats:
+            break
+        stat_to_increase = random.choice(available_stats)
+        max_possible_increase = min(total_points, 25 - player.stats[stat_to_increase])
+        increase_amount = random.randint(1, max_possible_increase)
+        player.stats[stat_to_increase] += increase_amount
+        total_points -= increase_amount
+
+def create_player():
+    while True:
+        try:
+            name = input("Enter player's name: ").strip()
+            if name:  # Check name is not empty
+                new_player = Player(name)
+                randomize_stats(new_player)
+                return new_player
+            else:
+                print("Name cannot be empty.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+def show_event_chance(player, total_traps, total_players, round_counter):
+    probabilities = calculate_event_probabilities(player, total_traps, total_players, round_counter)
+    events = ['neutral', 'item', 'combat', 'trap setup', 'trap fall', 'sponsorship', 'alliance']
+
+    print(f"\nEvent Probabilities for {player.name} in Round {round_counter}:")
+    for event, chance in zip(events, probabilities):
+        print(f"{event.title()}: {chance * 100:.2f}%")
+
+def combat_event(attacker, defender, players):
+    if defender.name in attacker.alliances:
+        print(f"{attacker.name} and {defender.name} are allies and won't fight.")
+        return False
+
+    attack_strength = attacker.stats['STR']
+    defense_reduction = defender.stats['DEF'] * 0.10
+    
+    effective_defense = defense_reduction if defender.stats['DEF'] <= attacker.stats['STR'] else defense_reduction * 0.75
+    damage = max(1, attack_strength - int(attack_strength * effective_defense))
+    defender.stats['HP'] -= damage
+    print(f"{defender.name}'s HP changed by -{damage}. Current HP: {defender.stats['HP']}")
+
+    if defender.stats['HP'] <= 0:
+        print(f"{defender.name}'s HP reached zero. {defender.name} is dead.")
+        remove_dead_player_from_alliances(defender.name, players)
+        return True
+
+    return False
+
+
+def reduce_stamina(players):
+    for player in list(players):
+        if player.stats['STA'] > 0:
+            player.stats['STA'] -= 1
+            print(f"{player.name}'s STA changed by -1. Current STA: {player.stats['STA']}")
+        else:
+            player.stats['HP'] -= 1
+            print(f"{player.name}'s HP changed by -1. Current HP: {player.stats['HP']}")
+            if player.stats['HP'] <= 0:
+                print(f"{player.name}'s HP reached zero. {player.name} is dead.")
+                remove_dead_player_from_alliances(player.name, players)
+                players.remove(player)
+
+
+
+total_traps = 0
+
+def create_basic_items():
+    return {
+        'HP': {'Bandaid': 3.0},
+        'DEF': {'Armor': 3.0},
+        'STR': {'Knife': 1.0},
+        'STA': {'Burger': 3.0},
+        'INT': {'Book': 2.0},
+        'CHA': {'Makeup': 2.0}
+    }
+
+def execute_alliance_event(player, players, round_counter):
+    if round_counter >= FINAL_SHOWDOWN_ROUND:
+        print(f"Final showdown in progress. {player.name} cannot form new alliances.")
+        return
+
+    potential_allies = [p for p in players if p.name not in player.alliances and p != player]
+    if potential_allies:
+        new_ally = random.choice(potential_allies)
+        player.form_alliance(new_ally)
+        print(f"{player.name} and {new_ally.name} have formed an alliance.")
+    else:
+        print(f"{player.name} has no potential allies to form an alliance with.")
+
+def random_alliance_break(player, players, round_counter):
+    if round_counter >= FINAL_SHOWDOWN_ROUND:
+        for ally_name in list(player.alliances):
+            # Increased chance of breaking alliances during final showdown
+            if random.random() < 0.5:  # 50% chance
+                ally = next((p for p in players if p.name == ally_name), None)
+                if ally:
+                    player.break_alliance(ally)
+                    print(f"{player.name} and {ally.name} have broken their alliance.")
+
+def check_and_break_alliances(players):
+    if len(players) == 2 and players[0].name in players[1].alliances:
+        players[0].break_alliance(players[1])
+        print(f"Alliances broken between {players[0].name} and {players[1].name}.")
+
+FINAL_SHOWDOWN_ROUND = 20  # Constant for the final showdown round
+
+
+def calculate_event_probabilities(player, total_traps, total_players, round_counter):
+    base_probabilities = {
+        'neutral': 0.6,
+        'item': 0.1 + player.stats['INT'] * 0.025,
+        'combat': 0.15 + 0.01 * round_counter,
+        'trap setup': 0.05,
+        'trap fall': max(0, total_traps * 0.05 - player.stats['INT'] * 0.025),
+        'sponsorship': 0.1 + player.stats['CHA'] * 0.025,
+        'alliance': 0.1 + player.stats['CHA'] * 0.025
+    }
+
+    if round_counter >= FINAL_SHOWDOWN_ROUND:
+        # Set base probabilities during final showdown
+        base_probabilities['neutral'] = 0.4
+        base_probabilities['item'] = 0.1
+        base_probabilities['combat'] = 0.4  # Starting point for combat chance
+        base_probabilities['trap setup'] = 0.05
+        base_probabilities['trap fall'] = 0.05
+        base_probabilities['sponsorship'] = 0
+        base_probabilities['alliance'] = 0
+
+        # Increase combat chance each round after final showdown
+        additional_combat_chance = min(0.05 * (round_counter - FINAL_SHOWDOWN_ROUND), 0.3)  # Cap at an additional 30%
+        base_probabilities['combat'] += additional_combat_chance
+        # Adjust other probabilities to ensure total is 1
+        base_probabilities['neutral'] -= additional_combat_chance
+
+    total = sum(base_probabilities.values())
+    for event in base_probabilities:
+        base_probabilities[event] /= total
+
+    return [base_probabilities[event] for event in base_probabilities]
+
+
+def start_event(player, players, basic_items_by_stat, round_counter):
+    global total_traps
+
+    # Skip the event for dead players
+    if player.stats['HP'] <= 0:
+        return
+
+    events = ['neutral', 'item', 'combat', 'trap setup', 'trap fall', 'sponsorship', 'alliance']
+    probabilities = calculate_event_probabilities(player, total_traps, len(players), round_counter)
+
+    chosen_event = random.choices(events, probabilities, k=1)[0]
+
+    eligible_opponents = [p for p in players if p != player and p.name not in player.alliances]
+    potential_allies = [p for p in players if p.name not in player.alliances and p != player]
+
+    # Handle alliance formation or combat eligibility
+    if chosen_event == 'combat' and not eligible_opponents:
+        chosen_event = 'neutral'
+    elif chosen_event == 'alliance':
+        if not potential_allies or round_counter >= FINAL_SHOWDOWN_ROUND:
+            chosen_event = 'neutral'
+
+    print(f"\n{player.name}'s turn - Chosen Event: {chosen_event}")
+
+    if chosen_event == 'neutral':
+        print(f"{player.name} has a peaceful moment.")
+    elif chosen_event == 'alliance':
+        execute_alliance_event(player, players, round_counter)
+    
+
+    # Handle the 'item' event
+    elif chosen_event == 'item':
+        # Item event handling
+        stat_types = ['HP', 'DEF', 'STR', 'STA', 'INT']
+        stat_probabilities = [0.20, 0.15, 0.15, 0.40, 0.10]
+        chosen_stat = random.choices(stat_types, stat_probabilities, k=1)[0]
+
+        items_for_stat = basic_items_by_stat[chosen_stat]
+        item_names = list(items_for_stat.keys())
+        item_chances = [items_for_stat[name] for name in item_names]
+        chosen_item_name = random.choices(item_names, item_chances, k=1)[0]
+        effect_value = items_for_stat[chosen_item_name]
+
+        effect = {chosen_stat: effect_value}
+        found_item = Item(chosen_item_name, effect)
+
+        player.add_item(found_item)
+        player.use_item(chosen_item_name)
+        print(f"{player.name} finds and uses a {chosen_item_name}.")
+
+    # Handle the 'combat' event
+    elif chosen_event == 'combat':
+        # Check if there are eligible opponents
+        if eligible_opponents:
+            # Randomly choose an opponent from eligible opponents
+            opponent = random.choice(eligible_opponents)
+            print(f"{player.name} engages in combat with {opponent.name}.")
+            # Execute combat and handle the outcome
+            if combat_event(player, opponent, players):
+                players.remove(opponent)
+                print(f"{opponent.name} has been defeated.")
+        else:
+            print(f"No eligible opponents available for combat for {player.name}.")
+
+    # Handle the 'trap setup' event
+    elif chosen_event == 'trap setup':
+        # Increment the total number of traps and announce it
+        total_traps += 1
+        print(f"{player.name} sets up a trap. Total traps on the ground: {total_traps}")
+
+    # Handle the 'trap fall' event
+    elif chosen_event == 'trap fall':
+        # Deduct HP due to falling in a trap and announce the new HP
+        player.stats['HP'] -= 4
+        print(f"{player.name} falls into a trap and loses 4 HP. Current HP: {player.stats['HP']}")
+        # Check if the player's HP has dropped to zero or below
+        if player.stats['HP'] <= 0:
+            print(f"{player.name}'s HP reached zero. {player.name} is dead.")
+            # Remove the dead player from any alliances
+            remove_dead_player_from_alliances(player.name, players)
+            # Remove the dead player from the game
+            players.remove(player)
+
+    # Handle the 'sponsorship' event
+    # Handle the 'sponsorship' event
+    elif chosen_event == 'sponsorship':
+        # Determine the player's lowest stat
+        lowest_stat = min(player.stats, key=player.stats.get)
+        # Access the items available for the lowest stat
+        items_for_lowest_stat = basic_items_by_stat[lowest_stat]
+        # Randomly choose an item to be given as sponsorship
+        chosen_item_name = random.choice(list(items_for_lowest_stat.keys()))
+        # Retrieve the value of the effect from the chosen item
+        effect_value = items_for_lowest_stat[chosen_item_name]
+        # Create the effect as a dictionary
+        effect = {lowest_stat: effect_value}
+        # Create a new item with the chosen name and effect
+        sponsored_item = Item(chosen_item_name, effect)
+        # Add the sponsored item to the player's inventory
+        player.add_item(sponsored_item)
+        # Automatically use the item and apply its effects
+        player.use_item(chosen_item_name)
+        # Announce the receipt of the sponsorship
+        print(f"{player.name} receives sponsorship and gets a {chosen_item_name} to boost their {lowest_stat}.")
+    # Check if there are any eligible opponents for combat
+    elif chosen_event == 'combat':
+        eligible_opponents = [p for p in players if p != player and p.name not in player.alliances]
+        if eligible_opponents:
+            opponent = random.choice(eligible_opponents)
+            print(f"{player.name} engages in combat with {opponent.name}.")
+            if combat_event(player, opponent, players):
+                players.remove(opponent)
+                print(f"{opponent.name} has been defeated.")
+        else:
+            print(f"No eligible opponents available for combat for {player.name}.")
+            # Default to a neutral event if no opponents are available
+            print(f"{player.name} has a peaceful moment instead.")
+
+    # Handle the 'trap setup' event
+    elif chosen_event == 'trap setup':
+        total_traps += 1
+        print(f"{player.name} sets up a trap. Total traps on the ground: {total_traps}")
+
+    # Handle the 'trap fall' event
+    elif chosen_event == 'trap fall':
+        player.stats['HP'] -= 4
+        print(f"{player.name} falls into a trap and loses 4 HP. Current HP: {player.stats['HP']}")
+        if player.stats['HP'] <= 0:
+            print(f"{player.name}'s HP reached zero. {player.name} is dead.")
+            remove_dead_player_from_alliances(player.name, players)
+            players.remove(player)
+
+    # Finish the 'start_event' function
+
+
+def remove_dead_player_from_alliances(dead_player_name, players):
+    for player in players:
+        if dead_player_name in player.alliances:
+            player.alliances.discard(dead_player_name)
+
+def print_player_info(player):
+    print(f"\nPlayer Name: {player.name}")
+    for stat, value in player.stats.items():
+        print(f"{stat}: {value}")
+    player.list_inventory()
+
+def start_round(players, basic_items_by_stat, round_counter):
+    global total_traps
+    reduce_stamina(players)
+    for player in list(players):
+        start_event(player, players, basic_items_by_stat, round_counter)
+    print("\n--- End of Round ---")
+    for player in players:
+        print_player_info(player)
+
+def main():
+    try:
+        basic_items_by_stat = create_basic_items()
+
+        # Input validation for the number of players
+        while True:
+            try:
+                num_players = input("Enter the number of players: ")
+                num_players = int(num_players)
+                if num_players <= 0:
+                    raise ValueError("Number of players must be greater than 0.")
+                break  # Exit the loop if input is valid
+            except ValueError as e:
+                print(f"Invalid input: {e}. Please enter a valid number.")
+
+        players = [create_player() for _ in range(num_players)]
+
+        dev_mode = True  # Set to False in production
+        final_showdown_announced = False
+
+        print("\n--- Initial Player Stats ---")
+        for player in players:
+            print_player_info(player)
+
+        round_counter = 1
+        while len(players) > 1:
+            check_and_break_alliances(players)
+
+            if round_counter == FINAL_SHOWDOWN_ROUND and not final_showdown_announced:
+                print("\n--- Final Showdown! ---")
+                print("The game intensifies! Combat chances have increased, and alliances are more fragile.")
+                final_showdown_announced = True
+
+            for player in list(players):
+                start_event(player, players, basic_items_by_stat, round_counter)
+                if round_counter >= FINAL_SHOWDOWN_ROUND:
+                    random_alliance_break(player, players, round_counter)
+
+            print("\n--- Alliances ---")
+            for player in players:
+                if player.alliances:
+                    allies = ', '.join(player.alliances)
+                    print(f"{player.name} is allied with: {allies}")
+                else:
+                    print(f"{player.name} has no alliances.")
+            print(f"\nTotal traps on the ground: {total_traps}")
+
+            if dev_mode:
+                for player in players:
+                    show_event_chance(player, total_traps, len(players), round_counter)
+
+            while True:
+                try:
+                    user_input = input(f"\nPlay Round {round_counter}? (yes/no): ").lower()
+                    if user_input not in ['yes', 'no']:
+                        raise ValueError("Please enter 'yes' or 'no'.")
+                    break
+                except ValueError as e:
+                    print(e)
+
+            if user_input == 'yes':
+                print(f"\n--- Starting Round {round_counter} ---")
+                start_round(players, basic_items_by_stat, round_counter)
+                round_counter += 1
+            elif user_input == 'no':
+                print("\nGame paused.")
+                break
+
+        print("\n--- Game Over ---")
+        if players:
+            print(f"The winner is {players[0].name}!")
+        else:
+            print("No players remaining.")
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+if __name__ == "__main__":
+    main() 
+</p>
+</body>
+</html>
